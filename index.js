@@ -8,6 +8,10 @@ const app = express();
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.json('welcome to CREA TECH"s love api')
+})
+
 app.get('/results', (req, res) => {
   const group = req.query
 
